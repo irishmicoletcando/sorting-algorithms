@@ -8,6 +8,7 @@ def bubble_sort(nums):
         nums[j] = nums[j+1]
         nums[j+1] = temp
 
+    print(nums)
 
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
 bubble_sort(nums)
