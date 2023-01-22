@@ -4,6 +4,7 @@ def quick_sort(nums, left, right):
       quick_sort(nums, left, partition_pos -1)
       quick_sort(nums, partition_pos + 1, right)
   # if length of subarray = 1, do nothing
+  print(nums)
 
 
 def partition(nums, left, right): # returns the index of pivot element after the first step of quick sort
@@ -32,5 +33,6 @@ def partition(nums, left, right): # returns the index of pivot element after the
 
 
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
+print(nums)
 quick_sort(nums, 0, len(nums) - 1)
 print(nums)
