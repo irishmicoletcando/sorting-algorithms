@@ -5,7 +5,7 @@ def insertion_sort(nums):
     j = i
     # swapping condition
     # left is bigger than current element
-    while nums[j - 1] > nums[j]: 
+    while nums[j - 1] > nums[j] and j > 0: 
       # swapping
       # looks for entry in index j and puts in index j - 1 and simulataneously looks for entry in j - 1 and puts in index j
       nums[j - 1], nums[j] = nums[j], nums[j -  1]
