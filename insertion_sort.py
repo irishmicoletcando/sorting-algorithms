@@ -11,6 +11,8 @@ def insertion_sort(nums):
       nums[j - 1], nums[j] = nums[j], nums[j -  1]
       # going further to the left after swapping
       j -= 1
+    
+      print(nums)
 
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
 insertion_sort(nums)
