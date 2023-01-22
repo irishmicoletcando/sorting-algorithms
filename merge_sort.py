@@ -9,6 +9,10 @@ def merge_sort(nums):
     merge_sort(left_num_arr)
     merge_sort(right_num_arr)
 
+    # merge
+    i = 0 # tracking elements in leftmost part of the array
+    j = 0 # tracking elements in rightmost part of the array
+
   # if len(nums) < 1, array is already sorted
 
 
