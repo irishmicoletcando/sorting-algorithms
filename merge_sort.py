@@ -5,6 +5,10 @@ def merge_sort(nums):
     # from middle part of nums array to end
     right_num_arr = nums[len(nums)//2:]
 
+    # recursion
+    merge_sort(left_num_arr)
+    merge_sort(right_num_arr)
+
   # if len(nums) < 1, array is already sorted
 
 
