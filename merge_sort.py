@@ -12,6 +12,15 @@ def merge_sort(nums):
     # merge
     i = 0 # tracking elements in leftmost part of the array
     j = 0 # tracking elements in rightmost part of the array
+    k = 0 # tracking elements in merged array
+
+    while i < len(left_num_arr) and j < len(right_num_arr):
+      # comparison
+      if left_num_arr[i] < right_num_arr[j]:
+        # saves value of left num arr in merged array
+        nums[k] = left_num_arr[i]
+        i += 1
+        k += 1
 
   # if len(nums) < 1, array is already sorted
 
