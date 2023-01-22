@@ -1,6 +1,8 @@
 def quick_sort(nums, left, right):
   if left < right: # sub-array contains 2 elements
       partition_pos = partition(nums, left, right)
+      quick_sort(nums, left, partition_pos -1)
+      quick_sort(nums, partition_pos + 1, right)
   # if length of subarray = 1, do nothing
 
 
