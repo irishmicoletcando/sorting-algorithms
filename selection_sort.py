@@ -8,4 +8,9 @@ def sort(nums):
       if nums[j] < nums[minpos]:
         minpos = j
 
+    # swapping the index value i
+    temp = nums[i]
+    nums[i] = nums[minpos]
+    nums[minpos] = temp
+
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
