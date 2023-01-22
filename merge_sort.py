@@ -21,6 +21,10 @@ def merge_sort(nums):
         nums[k] = left_num_arr[i]
         i += 1
         k += 1
+      else:
+        nums[k] = right_num_arr[j]
+        j += 1
+        k += 1
 
   # if len(nums) < 1, array is already sorted
 
