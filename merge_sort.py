@@ -1,6 +1,10 @@
 def merge_sort(nums):
   if len(nums) > 1:
-    
+    # from beginning of nums array to middle part of nums array
+    left_num_arr = nums[:len(nums)//2]
+    # from middle part of nums array to end
+    right_num_arr = nums[len(nums)//2:]
+
   # if len(nums) < 1, array is already sorted
 
 
