@@ -16,6 +16,11 @@ def partition(nums, left, right): # returns the index of pivot element after the
     # moves j to the left
     while i < right and nums[i] < pivot:
       i += 1
+    while j > left and nums[j] >= pivot:
+      j -= 1
+
+
+      
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
 quick_sort(nums)
 print(nums)
