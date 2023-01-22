@@ -9,8 +9,13 @@ def quick_sort(nums, left, right):
 def partition(nums, left, right): # returns the index of pivot element after the first step of quick sort
   i = left # defines the left point of area to sort
   j = right - 1 # defines the right point of pivot
-  pivot = arr[right] 
+  pivot = nums[right]
 
+  while i < j:
+    # moves i to the right
+    # moves j to the left
+    while i < right and nums[i] < pivot:
+      i += 1
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
 quick_sort(nums)
 print(nums)
