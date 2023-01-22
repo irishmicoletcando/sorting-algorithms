@@ -4,5 +4,8 @@ def sort(nums):
     minpos = i # holds the minimum position
     # loop for minpos
     for j in range(i, len(nums)):
+      # value is less than minpos, change min position
+      if nums[j] < nums[minpos]:
+        minpos = j
 
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
