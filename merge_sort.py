@@ -32,6 +32,12 @@ def merge_sort(nums):
       i += 1
       k += 1
 
+    # every element from the left num arr is already sorted but there are some missing elements in right num arr
+    # checks if not at the end of the right num arr and assign every element of the right num arr to merged array
+    while j < len(right_num_arr):
+      nums[k] = right_num_arr[j]
+      j += 1
+      k += 1
   # if len(nums) < 1, array is already sorted
 
 
