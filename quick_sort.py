@@ -20,8 +20,8 @@ def partition(nums, left, right): # returns the index of pivot element after the
       j -= 1
 
   # checks if elements crossed, if not, swap
-  if i < j:
-    nums[i], nums[j] = nums[j], nums[i]
+    if i < j:
+      nums[i], nums[j] = nums[j], nums[i]
 
   # if i and j crossed, swap elements
   if nums[i] > pivot:
@@ -30,6 +30,7 @@ def partition(nums, left, right): # returns the index of pivot element after the
   # determines where to split i to call quick sort recursively
   return i
 
+
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
-quick_sort(nums)
+quick_sort(nums, 0, len(nums) - 1)
 print(nums)
