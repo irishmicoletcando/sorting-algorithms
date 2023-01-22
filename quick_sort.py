@@ -21,7 +21,7 @@ def partition(nums, left, right): # returns the index of pivot element after the
 
   # checks if elements crossed, if not, swap
   if i < j:
-    arr[i], arr[j] = arr[j], arr[i]
+    nums[i], nums[j] = nums[j], nums[i]
 
 nums = [53, 82, 9, 13, 98, 73, 18, 61, 16, 62]
 quick_sort(nums)
